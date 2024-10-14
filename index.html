@@ -72,7 +72,7 @@
             padding: 15px;
             list-style: none;
             font-weight: 500;
-
+            font-family: var(--Fredoka);
         }
 
         .submenu {
@@ -103,7 +103,6 @@
             position: absolute;
             width: 32%;
             height: 100px;
-
             left: 486px;
             display: none;
 
@@ -131,7 +130,7 @@
 
         .youtube {
             display: flex;
-            color: hsl(344, 95%, 46%);
+            color: var(--BluishCyan);
             padding: 10px;
         }
 
@@ -143,7 +142,7 @@
 
         .insta {
             display: flex;
-            color: hsl(344, 95%, 46%);
+            color: var(--BluishCyan);
             padding: 10px;
         }
 
@@ -156,13 +155,12 @@
 
         .text-contain p {
             color: var(--deepcove);
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 16px;
             padding: 7px;
         }
 
         .text-contain p:hover {
-            background-color: rgb(165, 6, 33);
+            background-color: var(--BluishCyan);
             color: var(--white);
         }
 
@@ -175,12 +173,13 @@
             width: 54%;
             right: 129px;
             display: none;
+            z-index: 99;
 
         }
 
         .countries-container {
             padding: 0px 50px;
-            background-color: rgba(188, 172, 172, 0.449);
+            background-color: #f9f9f9d5;
             width: 90%;
             position: absolute;
             top: 25px;
@@ -197,13 +196,13 @@
         }
 
         .coun-icon i {
-            color: var(--red);
+            color: var(--BluishCyan);
             padding-right: 8px;
             padding-top: 5px;
         }
 
         .coun-icon p {
-            color: var(--red);
+            color: var(--BluishCyan);
 
         }
 
@@ -216,7 +215,7 @@
         .india-flag {
             display: flex;
             padding: 10px;
-            color: var(--red);
+            color: var(--BluishCyan);
             margin-top: 20px;
 
         }
@@ -261,7 +260,7 @@
         }
 
         .text p:hover {
-            background-color: rgb(165, 6, 33);
+            background-color: var(--BluishCyan);
             color: var(--white);
         }
 
@@ -281,14 +280,16 @@
         }
 
         .contact-menu li {
-            background-color: rgba(143, 137, 137, 0.672);
+            background-color: #f9f9f9e8;
             border: 1px solid wheat;
             color: #091238ad;
+            z-index: 99;
+
 
         }
 
         .contact-menu li:hover {
-            background-color: rgb(165, 6, 33);
+            background-color: var(--BluishCyan);
             color: var(--white);
 
         }
@@ -309,7 +310,7 @@
 
         .contactus-container li a {
             color: var(--morpich);
-            font-weight: 700;
+            font-weight: 500;
             text-decoration: none;
         }
 
@@ -648,7 +649,7 @@
             padding-top: 100px;
             font-family: var(--Fredoka);
             padding-bottom: 40px;
-            font-size: 26px;
+            font-size: 30px;
             text-shadow: 1px 1px var(--MidnightBlue);
 
         }
@@ -1453,7 +1454,6 @@
         .feature-tab-wrapper button {
             padding: 9px 20px;
             background-color: var(--morpich);
-            margin-top: 247px;
             border-radius: 20px 20px;
             border: none;
             color: var(--white);
@@ -1469,6 +1469,7 @@
             padding-bottom: 30px;
             border: 2px solid var(--morpich);
             margin: 0px 10px;
+            height: 415px;
             border-radius: 20px 20px;
 
 
@@ -1495,15 +1496,11 @@
             padding: 20px;
         }
 
-        .feature-img-contain {
-            position: relative;
-        }
+
 
         .feature-img-contain img {
-            position: absolute;
-            top: 4px;
-            left: 70px;
-            height: 250px;
+            width: 100%;
+            height: 280px;
 
         }
 
@@ -1893,8 +1890,9 @@
             margin-top: 9px;
             margin-left: 58px;
             color: var(--morpich);
-            font-weight: 600;
+            font-weight: 500;
             border-radius: 10px 10px 10px 10px;
+            font-family: var(--Fredoka);
         }
 
 
@@ -2248,14 +2246,6 @@
                 height: 300px;
             }
 
-            .feature-img-contain img {
-                position: absolute;
-                top: 19px;
-                left: 27px;
-                width: 189px;
-                height: 155px;
-                border-radius: 20px;
-            }
 
             .feature-tab-wrapper-content p {
                 margin-top: 190px;
@@ -2275,7 +2265,6 @@
 
             }
 
-
             .influ-services-main span {
                 color: var(--morpich);
                 font-weight: 800;
@@ -2288,7 +2277,6 @@
             .influ-services-main h3 {
                 font-size: 19px;
                 color: var(--morpich);
-
                 font-weight: 400;
                 display: inline;
                 padding-left: 6px;
@@ -2376,6 +2364,853 @@
             }
 
         }
+
+        @media only screen and (max-width: 992px) {
+
+
+            .home-banner-main {
+                width: 100%;
+                padding-bottom: 90px;
+                height: 535px;
+                background: linear-gradient(to right, var(--morpich) 0%, #ffffffa0 75%);
+            }
+
+            .home-text-content h1 {
+                font-weight: 800;
+                color: var(--white);
+                font-size: 26px;
+                font-family: var(--Poppins);
+                text-shadow: 3px 3px var(--BluishCyan);
+            }
+
+            .home-text-content {
+                position: relative;
+                top: 77px;
+                left: 0;
+                width: 100%;
+            }
+
+            .home-text-content-para {
+                width: 100%;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .home-video-content {
+                position: relative;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+            }
+
+            .influ-faq-tab {
+                width: 100%;
+                margin-top: 40px;
+                padding: 0px 20px;
+            }
+
+            .influ-faq-tab p {
+                color: var(--black);
+                margin-top: 30px;
+                font-family: var(--Playwrite);
+                text-align: justify;
+                font-size: 12px;
+                margin-right: 0px;
+            }
+
+            .home-video-content video {
+                width: 100%;
+                height: 550px;
+            }
+
+            .influ-faq-tab h2 {
+                font-size: 23px;
+            }
+
+
+            .faq-main-start h3 {
+                font-weight: 400;
+                color: grey;
+                padding-top: 10px;
+                font-family: var(--Fredoka);
+                padding-bottom: 40px;
+                font-size: 17px;
+                text-shadow: 1px 1px var(--MidnightBlue);
+            }
+
+            .faq-main-start video {
+                box-shadow: 0px 0px 3px 0px;
+                border-radius: 10px 10px;
+                width: 90%;
+                height: 290px;
+                border-left: 1px solid var(--red);
+                border-top: 1px solid var(--deepcove);
+            }
+
+            .feature-tab-content h2 {
+                color: var(--white);
+                font-family: var(--Poppins);
+                font-weight: 700;
+                text-align: center;
+                font-size: 24px;
+                text-shadow: 2px 2px rgba(0, 0, 0, 0.965);
+            }
+
+            .feature-img-contain img {
+                width: 100%;
+                height: 155px;
+            }
+
+            .feature-tab-wrapper-content h3 {
+                color: var(--BluishCyan);
+                font-weight: 500;
+                display: inline;
+                font-size: 18px;
+                font-family: var(--Fredoka);
+            }
+
+            .feature-tab-wrapper {
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-top: 40px;
+                color: var(--white);
+                height: 260px;
+                box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.756);
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+            .feature-tab-wrapper-content {
+                padding-top: 6px;
+                text-align: center;
+                padding-bottom: 30px;
+                border: 2px solid var(--morpich);
+                margin: -11px -6px;
+                height: 240px;
+                border-radius: 20px 20px;
+            }
+
+            .feature-tab-wrapper button {
+                padding: 3px 11px;
+                background-color: var(--morpich);
+                border-radius: 20px 20px;
+                border: none;
+                color: var(--white);
+                font-size: 12px;
+            }
+
+
+
+            .card-com-variation-img img {
+                width: 100%;
+                height: 241px;
+                padding: 10px;
+                border-radius: 20px;
+            }
+
+            .full-card-video-img video {
+                width: 100%;
+            }
+
+            .influ-services-main span {
+                color: var(--morpich);
+                font-weight: 800;
+                font-size: 26px;
+                font-family: var(--Poppins);
+                text-shadow: 1px 1px black;
+            }
+
+            .influ-services-main h3 {
+                font-weight: 400;
+                font-size: 26px;
+                color: var(--morpich);
+                display: inline;
+            }
+
+            .services-para p {
+                color: var(--black);
+                font-size: 12px;
+                font-family: var(--Playwrite);
+            }
+
+            .full-card-video-text span i {
+                color: var(--red);
+                font-size: 18px;
+                padding-left: 0px;
+                padding-right: 12px;
+            }
+
+            .full-card-video-text {
+                border: 3px solid var(--white);
+                padding: 10px;
+                border-radius: var(--titlesize);
+                width: 82%;
+                margin-top: 46px;
+                position: relative;
+            }
+
+            .full-card-video-text p {
+                display: inline;
+                color: var(--Iceberg);
+                font-weight: 700;
+                font-size: 13px;
+                position: absolute;
+                top: 13px;
+            }
+
+            .full-card-video-para {
+                color: var(--Iceberg);
+                width: 82%;
+                padding-bottom: 20px;
+                font-size: 12px !important;
+                font-weight: 400 !important;
+                font-family: var(--Playwrite);
+                margin-top: 18px;
+                margin-left: 9px;
+            }
+
+            .full-card-video-box {
+                width: 168px;
+                height: 37px;
+                padding: 6px;
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-left: 6px;
+                color: var(--BluishCyan);
+                cursor: pointer;
+            }
+
+            .full-card-video-link ul {
+                margin-left: -17px;
+            }
+
+            .full-card-video-link ul li {
+                font-size: 10px;
+                color: var(--Iceberg);
+                line-height: 1rem;
+                font-family: var(--Playwrite);
+            }
+
+            .instagram-bg-text {
+                border: 3px solid var(--white);
+                padding: 10px;
+                border-radius: var(--titlesize);
+                width: 82%;
+                margin-top: 46px;
+                position: relative;
+            }
+
+            .full-card-video-box p {
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            .instagram-bg-text span i {
+                color: var(--white);
+                font-size: 18px;
+                padding-left: 4px;
+                padding-right: 10px;
+            }
+
+            .instagram-bg-text p {
+                display: inline;
+                color: var(--Iceberg);
+                font-weight: 700;
+                font-size: 13px;
+                position: absolute;
+                top: 15px;
+            }
+
+            .full-card-video-para-insta {
+                color: var(--Iceberg);
+                width: 82%;
+                padding-bottom: 20px;
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                font-family: var(--Playwrite);
+                margin-top: 20px;
+                margin-left: 9px;
+            }
+
+            .instagram-bg-video-box {
+                width: 168px;
+                height: 37px;
+                padding: 6px;
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-left: 6px;
+                color: var(--BluishCyan);
+                cursor: pointer;
+            }
+
+            .instagram-bg-video-box p {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .full-card-video-link-insta ul li {
+                color: var(--Iceberg);
+                line-height: 1rem;
+                font-size: 11px;
+                font-family: var(--Playwrite);
+            }
+
+            .full-card-video-link-insta ul {
+                margin-left: -17px;
+
+            }
+
+            .full-card-video-img img {
+                height: 334px;
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .instagram-bg {
+                height: 336px;
+                border-radius: 22px;
+                background-color: #189ab4;
+            }
+
+            .linkdin-bg-text p {
+                display: inline;
+                color: var(--BluishCyan);
+                font-weight: 700;
+                font-size: 14px;
+                position: absolute;
+                top: 12px;
+            }
+
+            .linkdin-bg-text span i {
+                color: var(--white);
+                font-size: 18px;
+                padding-left: 5px;
+                padding-right: 12px;
+            }
+
+            .linkdin-bg-text {
+                border: 3px solid var(--white);
+                padding: 10px;
+                border-radius: var(--titlesize);
+                width: 82%;
+                margin-top: 46px;
+                position: relative;
+            }
+
+            .full-card-video-para-linkdin {
+                color: var(--BluishCyan);
+                width: 82%;
+                padding-bottom: 20px;
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                font-family: var(--Playwrite);
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            .linkdin-bg-video-box {
+                width: 168px;
+                height: 37px;
+                padding: 6px;
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-left: 10px;
+                color: var(--BluishCyan);
+                cursor: pointer;
+            }
+
+            .linkdin-bg-video-box p {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+
+            .full-card-video-link-linkdin {
+                width: 135%;
+                font-size: 13px;
+
+            }
+
+            .full-card-video-link-linkdin ul li {
+                color: var(--BluishCyan);
+                line-height: 2rem;
+                font-size: 10px;
+                font-family: var(--Playwrite);
+            }
+
+            .linkdin-bg-main {
+                height: 396px;
+                border-radius: 22px;
+                background-color: #75e6da;
+            }
+
+            .meme-home-icon {
+                width: 51px;
+                height: 48px;
+                background-position: -2423px -327px;
+            }
+
+            .full-card-video-text-meme {
+                border: 3px solid var(--white);
+                padding: 10px;
+                border-radius: var(--titlesize);
+                width: 82%;
+                margin-top: 46px;
+                position: relative;
+            }
+
+            .full-card-video-text-meme p {
+                display: inline;
+                color: var(--BluishCyan);
+                font-weight: 700;
+                font-size: 20px;
+                position: absolute;
+                top: 13px;
+                left: 71px;
+            }
+
+            .full-card-video-para-meme {
+                color: var(--BluishCyan);
+                width: 82%;
+                padding-bottom: 20px;
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                font-family: var(--Playwrite);
+                margin-top: 20px;
+                margin-left: 14px;
+            }
+
+            .full-card-video-box-meme {
+                width: 168px;
+                height: 37px;
+                padding: 6px;
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-left: 17px;
+                color: var(--BluishCyan);
+                cursor: pointer;
+            }
+
+            .full-card-video-box-meme p {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .full-card-video-link-meme ul {
+                width: 155%;
+            }
+
+            .full-card-video-link-meme ul li {
+                color: var(--BluishCyan);
+                line-height: 2rem;
+                font-size: 15px;
+                font-family: var(--Playwrite);
+            }
+
+            .influ-talk-card h3 {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--white);
+            }
+
+            .influ-experts-card-start p::after {
+                content: 'Contact Us';
+                position: absolute;
+                background-color: var(--white);
+                right: 20px;
+                color: var(--morpich);
+                padding: 5px 8px;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 700;
+                margin-top: 0px;
+                cursor: pointer;
+            }
+
+            .influ-experts-card-start p {
+                color: var(--white);
+                font-family: var(--Poppins);
+                display: inline;
+                font-size: 24px;
+            }
+
+            .influ-expert-cardbox-start h3 {
+                padding: 0px 13px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            .influ-expert-cardbox-start span {
+                width: 100%;
+                font-family: var(--Playwrite);
+                display: inline-block;
+                font-size: 12px;
+                padding: 10px 6px 30px 10px;
+            }
+
+            .influ-expert-cardbox-start {
+                height: 320px;
+                border-radius: 10px;
+                background-color: var(--white);
+                border: 1px solid grey;
+                color: var(--BluishCyan);
+                cursor: pointer;
+            }
+
+            .full-width-faqs h4 {
+                text-align: center;
+                color: var(--morpich);
+                font-weight: 400;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 20px;
+                font-family: var(--Poppins);
+            }
+
+            .full-width-faqs p {
+                font-family: var(--Playwrite);
+                padding-top: 100px;
+                font-size: 12px;
+                text-align: justify;
+            }
+
+            .swiper-photos-idea {
+                padding: 20px 0px;
+            }
+
+            .swiper-photos-idea h2 {
+                font-size: 19px;
+            }
+
+            .cs-text span {
+                font-size: 26px;
+            }
+
+            .cs-btn {
+                color: var(--white);
+                background-color: var(--morpich);
+                padding: 0px 10px;
+                border: 2px solid #fff0;
+                border-radius: 6px;
+                display: inline-block;
+                font-size: 5px;
+                font-weight: 300;
+                margin-top: 27px;
+                margin-left: 92px;
+                cursor: pointer;
+                text-shadow: 1px 1px black;
+                font-family: var(--Fredoka);
+            }
+
+            .full-width-faqs-start {
+                background-color: #35a19c11;
+                border-radius: 13px;
+                padding: 6px;
+                padding-left: 13px;
+                margin-top: 6px;
+            }
+
+            .full-width-faqs span {
+                color: var(--morpich);
+                font-weight: 800;
+                font-size: 22px;
+
+                font-family: var(--Poppins);
+                text-shadow: 1px 1px black;
+            }
+
+            .case-study-content p {
+                padding: 15px;
+                font-weight: 700;
+                font-size: 16px;
+                color: var(--morpich);
+            }
+
+            .card-com-variation-one {
+                height: 435px;
+                background-color: var(--white);
+                border-radius: 11px;
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            }
+
+            .card-com-variation-button {
+                color: var(--BluishCyan);
+                padding: 0px 15px;
+                font-family: var(--Playwrite);
+                font-weight: 700;
+                cursor: pointer;
+                font-size: 13px;
+            }
+
+            .influ-content-creator h3 {
+                color: var(--morpich);
+                /* font-size: var(--titlesize); */
+                font-weight: 700;
+                text-align: center;
+                padding-top: 60px;
+                font-size: 26px;
+                text-shadow: 1px 1px black;
+                padding-bottom: 40px;
+                font-family: var(--Poppins);
+            }
+
+            .influ-content-creator {
+                width: 100%;
+            }
+
+            .influ-content-creator-text span {
+                color: var(--black);
+                font-family: var(--Playwrite);
+                font-size: 16px;
+                font-weight: 700;
+                margin-right: 30px;
+            }
+
+            .influ-content-creator-text p {
+                color: var(--black);
+                font-weight: 700;
+                font-size: 16px;
+                display: inline;
+                font-family: var(--Playwrite);
+            }
+
+            .banner-influencers-container {
+                padding: 5px 25px;
+                display: inline;
+                background-color: var(--morpich);
+                border-radius: 12px;
+            }
+
+            .key-facts-header p {
+                color: var(--white);
+                margin-top: 65px;
+                padding: 0px 30px;
+                /* font-size: var(--titlesize); */
+                font-family: var(--Poppins);
+                font-size: 25px;
+                text-shadow: 3px 3px var(--BluishCyan);
+            }
+
+            .fact-box h2 {
+                text-align: center;
+                margin-top: 40px;
+                color: var(--morpich);
+                padding: 0px 22px;
+                font-size: 37px;
+                font-weight: 700;
+                text-shadow: 2px 2px black;
+            }
+
+            .fact-boxs h2 {
+                text-align: center;
+                margin-top: 40px;
+                padding: 0px 22px;
+                color: var(--morpich);
+                text-shadow: 2px 2px black;
+                font-size: 37px;
+                font-weight: 700;
+            }
+
+            .fact-box p {
+                text-align: center;
+                padding: 0px 6px;
+                margin-top: 30px;
+                font-size: 12px;
+                font-family: var(--Playwrite);
+                color: var(--black);
+                padding-bottom: 30px;
+            }
+
+            .fact-boxs p {
+                font-size: 12px;
+                padding: 0px 6px;
+                margin-top: 30px;
+                font-family: var(--Playwrite);
+                text-align: center;
+                color: var(--deepcove);
+                padding-bottom: 30px;
+            }
+
+            .key-fact-boxicon {
+                width: 100%;
+                height: 160px;
+                background-color: var(--white);
+                border-radius: 12px;
+                margin-top: 30px;
+                box-shadow: 0px 0px 6px 0px rgb(192, 190, 190);
+            }
+
+            .blog-start {
+                padding-bottom: 50px;
+                padding: 80px 35px;
+            }
+
+            .blog-content-start h2 {
+                /* font-size: var(--titlesize); */
+                font-weight: 700;
+                font-size: 27px;
+                color: var(--morpich);
+                font-family: var(--Poppins);
+                text-shadow: 1px 1px black;
+            }
+
+            .blog-content-start button {
+                padding: 4px 11px;
+                background-color: var(--morpich);
+                margin-top: 19px;
+                border-radius: 20px 20px;
+                border: none;
+                font-weight: 600;
+                color: var(--white);
+            }
+
+            .blog-tabs i {
+                padding-left: 10px;
+                padding-right: 6px;
+            }
+
+            .blog-tabs img {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .blog-details {
+                padding: 10px 12px;
+            }
+
+            .blog-details h3 {
+                font-weight: 600;
+                font-size: 18px;
+                font-family: var(--Fredoka);
+            }
+
+            .blog-details p {
+                font-size: 12px;
+                text-align: left;
+                font-family: var(--Playwrite);
+            }
+
+            .blog-details button {
+                border: none;
+                background-color: var(--morpich);
+                border-radius: 20px 20px;
+                color: var(--white);
+                padding: 3px 8px;
+                font-size: 12px;
+            }
+
+            .blog-tabs {
+                height: 380px;
+                border-radius: 30px;
+                background-color: var(--white);
+                box-shadow: 0px 0px 1px 0px;
+            }
+
+            .influ-contactus-form-main {
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                border-radius: 10px;
+                padding-bottom: 50px;
+            }
+
+            .influ-contactus-form h2 {
+                text-align: center;
+                font-family: var(--Poppins);
+                color: var(--morpich);
+                font-weight: 700;
+                padding-bottom: 50px;
+                font-size: 26px;
+                text-shadow: 1px 1px black;
+            }
+
+            .influ-content-creator-image img {
+                width: 19%;
+                height: 190px;
+                padding: 3px;
+            }
+
+            .menubar {
+                margin: 0px;
+                margin-left: -130px;
+
+            }
+
+            .influ-contactus img {
+                width: 93%;
+            }
+
+            .get-banner-influencers-container {
+                background-color: var(--white);
+                border-radius: 12px;
+                width: 72%;
+                padding: 5px 16px;
+                font-family: var(--Fredoka);
+            }
+
+            .influ-contact {
+                width: 90%;
+                height: 483px;
+                background-color: var(--morpich);
+                border-radius: 13px;
+                padding: 30px;
+                box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.756);
+            }
+
+            .influ-contactus h3 {
+                font-size: 27px !important;
+            }
+
+            .sign-up button {
+                border: none;
+                box-shadow: 0px 0px 3px 0px var(--black);
+                background-color: var(--white);
+                padding: 8px 8px;
+                margin-top: 9px;
+                margin-left: 8px;
+                color: var(--morpich);
+                font-weight: 500;
+                width: 131%;
+                border-radius: 10px 10px 10px 10px;
+                font-family: var(--Fredoka);
+            }
+
+            .logo-img-contain img {
+                width: 76%;
+                height: 67px;
+                margin-left: -36px;
+            }
+
+            .contactus-container li {
+                background-color: var(--white);
+                margin-left: 6px;
+                width: 119%;
+                margin-top: 7px;
+                text-align: center;
+                box-shadow: 0px 0px 3px 0px;
+                border-radius: 10px;
+                padding: 9px 12px;
+            }
+
+            .menubar li {
+                color: var(--deepcove);
+                padding: 21px 5px;
+                list-style: none;
+                font-weight: 500;
+                height: 42px;
+
+                font-family: var(--Fredoka);
+            }
+
+            .contactus-container li a {
+                color: var(--morpich);
+                font-weight: 500;
+                position: relative;
+                bottom: 12px;
+                text-decoration: none;
+            }
+        }
     </style>
 </head>
 
@@ -2385,12 +3220,12 @@
             <div class="main">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-md-3 col-lg-3">
                             <div class="logo-img-contain">
                                 <img src="imgs/myinfluencer-removebg-preview.png" alt="">
                             </div>
                         </div>
-                        <div class="col-sm-9">
+                        <div class="col-sm-9 col-md-9 col-lg-9">
                             <ul class="menubar">
                                 <li class="menubar-contain">our work
                                     <i class="fa-solid fa-caret-down"></i>
@@ -2530,16 +3365,7 @@
                                 </li>
                                 <li class="menubar-contain">About
                                     <i class="fa-solid fa-caret-down"></i>
-                                    <div class="contact-container">
-                                        <div class="contact-con">
-                                            <ul class="contact-menu">
-                                                <li>About us</li>
-                                                <li>Blogs</li>
-                                                <li> Our Clients </li>
-                                                <li>Case Studies</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
                                 </li>
                                 <li class="menubar-contain">Blog
                                     <i class="fa-solid fa-caret-down"></i>
@@ -2565,7 +3391,7 @@
         <div class="home-banner-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 col-md-5 col-lg-5">
                         <div class="home-text-content">
                             <h1>Best
                                 <span>Influencer Marketing</span>
@@ -2582,7 +3408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-sm-7 col-md-7 col-lg-7">
                         <div class="home-video-content">
                             <video src="imgs/many.mp4" autoplay="" muted="" loop="" preload="auto"></video>
 
@@ -2614,14 +3440,14 @@
                             to elevate your brand's presence!</p>
                     </div>
                     <div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 col-md-5 col-lg-5">
                             <div class="faq-main-start">
                                 <video src="imgs/how-our-influencer-marketing-company.mp4" autoplay="" muted=""
                                     loop=""></video>
 
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 col-md-7 col-lg-7">
                             <div class="faq-main-start">
                                 <h3>Our influencer marketing company devises a comprehensive strategy to:</h3>
                                 <div class="faqs">
@@ -2669,7 +3495,7 @@
                     <div class="row">
 
 
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
                                     <div class="feature-tab-wrapper-content">
@@ -2683,7 +3509,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
                                     <div class="feature-tab-wrapper-content">
@@ -2697,7 +3523,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
                                     <div class="feature-tab-wrapper-content">
@@ -2711,11 +3537,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
                                     <div class="feature-tab-wrapper-content">
-                                        <h3> Grynow's AI-Driven Dashboard</h3>
+                                        <h3> AI-Driven Dashboard</h3>
                                         <div class="feature-img-contain">
                                             <img src="imgs/ai-main.webp" alt="">
                                         </div>
@@ -2724,11 +3550,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
                                     <div class="feature-tab-wrapper-content">
-                                        <h3>Expertise & Research Mastery:</h3>
+                                        <h3> Research Mastery:</h3>
                                         <div class="feature-img-contain">
                                             <img src="imgs/search-main.webp" alt="">
                                         </div>
@@ -2778,7 +3604,7 @@
                 <div class="full-card-video-main">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 order-sm-first order-last">
+                            <div class="col-sm-6 order-sm-first order-last col-md-6 col-lg-6">
                                 <div class="container">
                                     <div class="full-card-video-text">
                                         <span><i class="fa-brands fa-youtube"></i></span>
@@ -2799,7 +3625,7 @@
                                         <div class="container">
                                             <div class="row">
 
-                                                <div class="col-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link">
                                                         <ul>
                                                             <li>unboxing video</li>
@@ -2809,7 +3635,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link">
                                                         <ul>
                                                             <li>Vlogs</li>
@@ -2823,7 +3649,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-sm">
+                            <div class="col-sm-6 col-sm col-md-6 col-lg-6">
                                 <div class="full-card-video-img">
                                     <video src="imgs/youtube-influencer-marketing.mp4" autoplay="" muted=""
                                         loop=""></video>
@@ -2838,7 +3664,7 @@
                 <div class="instagram-bg">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6  order-sm-first order-last">
+                            <div class="col-sm-6  order-sm-first order-last col-md-6 col-lg-6">
                                 <div class="container">
                                     <div class="instagram-bg-text">
                                         <span><i class="fa-brands fa-instagram"></i></span>
@@ -2858,7 +3684,7 @@
                                     <div class="full-card-video-links">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link-insta">
                                                         <ul>
                                                             <li>Posts</li>
@@ -2868,7 +3694,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-md-6 col-md-6">
                                                     <div class="full-card-video-link-insta">
                                                         <ul>
                                                             <li>UGC</li>
@@ -2882,7 +3708,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-sm">
+                            <div class="col-sm-6 col-sm col-md-6 col-lg-6">
                                 <div class="full-card-video-img">
                                     <img src="imgs/instagram-influencer-marketing.gif" alt="">
                                 </div>
@@ -2898,7 +3724,7 @@
 
                     <div class="linkdin-bg-main">
                         <div class="row">
-                            <div class="col-sm-6  order-sm-first order-last">
+                            <div class="col-sm-6  order-sm-first order-last col-md-6 col-lg-6">
                                 <div class="container">
                                     <div class="linkdin-bg-text">
                                         <span><i class="fa-brands fa-linkedin"></i></span>
@@ -2918,7 +3744,7 @@
                                     <div class="full-card-video-links">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link-linkdin">
                                                         <ul>
                                                             <li>Brand Awareness</li>
@@ -2929,7 +3755,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link-linkdin">
                                                         <ul>
                                                             <li>Sign-up Driven Launches</li>
@@ -2961,7 +3787,7 @@
 
                     <div class="meme-marketing-bg">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="container">
                                     <div class="full-card-video-text-meme">
                                         <span class="meme-home-icon meme-home-icon-size"></span>
@@ -2981,7 +3807,7 @@
                                     <div class="full-card-video-links">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
                                                     <div class="full-card-video-link-meme">
                                                         <ul>
                                                             <li>Statics</li>
@@ -2997,7 +3823,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="full-card-video-img">
                                     <video src="imgs/meme-marketing.mp4" autoplay="" muted="" loop=""></video>
                                 </div>
@@ -3027,7 +3853,7 @@
                             <p>Our <strong>Influencer Marketing</strong> Experts</p>
                             <div class="influ-expert-cardbox ">
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="influ-expert-cardbox-start">
                                             <img src="imgs/understanding-your-business-goals.webp" alt="">
                                             <h3>Understand your business goals</h3>
@@ -3037,7 +3863,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="influ-expert-cardbox-start">
                                             <img src="imgs/connect-brands-with-influencer.webp" alt="">
                                             <h3>Connect brands with influencers</h3>
@@ -3048,7 +3874,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="influ-expert-cardbox-start">
                                             <img src="imgs/strategize-excute-inlfuencer-marketing.webp" alt="">
                                             <h3>Strategize & Execute influencer marketing campaigns</h3>
@@ -3080,7 +3906,7 @@
                                 </a>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-8 col-md-8 col-lg-8">
                                             <p class="fw-faq-paragraph">Just give us a call on +919899537363 OR reach
                                                 out
                                                 through our contact form, and our
@@ -3102,7 +3928,7 @@
                                                 ROI.
                                             </p>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
                                             <div class="faqs-imgs">
                                                 <img src="imgs/selecting-the-right-influencers.webp" alt=""
                                                     class="fw-faq-image">
@@ -3118,7 +3944,7 @@
                                 </a>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-8 col-md-8 col-lg-8">
                                             <p class="fw-faq-paragraph">Collaboratively, we embark on an Influencer
                                                 Campaign
                                                 that not only engages but also subtly outshines your competition.
@@ -3130,7 +3956,7 @@
                                                 towards its objectives with precision.
                                             </p>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
                                             <div class="faqs-imgs">
 
                                                 <img src="imgs/crafting-engaging-campaigns.webp" alt=""
@@ -3151,7 +3977,7 @@
                                 </a>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-8 col-md-8 col-lg-8">
                                             <p class="fw-faq-paragraph">Our powerful influencer marketing platform
                                                 serves as
                                                 the
@@ -3163,7 +3989,7 @@
                                                 transformative power of collaboration with India’s top influencers.
                                             </p>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
                                             <div class="faqs-imgs">
 
                                                 <img src="imgs/achieving-brand-success.webp" alt=""
@@ -3217,7 +4043,7 @@
                     <div class="influ-case-studies">
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-8">
+                                <div class="col-sm-8 col-md-8 col-lg-8">
                                     <div class="cs-text">
                                         <p>
                                             <span>Case Studies</span>
@@ -3226,7 +4052,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 col-md-4 col-lg-4">
                                     <div class="cs-btn">
                                         <h4>view all</h4>
                                     </div>
@@ -3234,7 +4060,7 @@
                             </div>
                             <div class="box">
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="card-com-variation-one">
                                             <div class="card-com-variation-img">
                                                 <img src="imgs/amazon.webp" alt="">
@@ -3249,7 +4075,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="card-com-variation-one">
                                             <div class="card-com-variation-img">
                                                 <img src="imgs/reequil.webp" alt="">
@@ -3264,7 +4090,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
                                         <div class="card-com-variation-one">
                                             <div class="card-com-variation-img">
                                                 <img src="imgs/paytm.webp" alt="">
@@ -3343,7 +4169,7 @@
                         </div>
                         <div class="influ-card-tab-var">
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-purple  influ-card-tab-var-size">
 
@@ -3351,7 +4177,7 @@
                                         <p>Fashion Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-pink influ-card-tab-Beauty-size">
 
@@ -3360,7 +4186,7 @@
                                             Beauty Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-green influ-card-tab-Finance-size">
 
@@ -3369,7 +4195,7 @@
                                             Finance Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-green  influ-card-tab-Food-size">
 
@@ -3379,7 +4205,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-green influ-card-tab-Gaming-size">
 
@@ -3387,7 +4213,7 @@
                                         <p>Gaming Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div
                                             class="influ-card-tab-var-img bg-purple  influ-card-tab-FitnessHealth-size">
@@ -3398,7 +4224,7 @@
                                             Fitness & Health Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img  bg-green  influ-card-tab-Comedy-size">
 
@@ -3407,7 +4233,7 @@
                                             Comedy Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-purple  influ-card-tab-Travel-size">
 
@@ -3417,14 +4243,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-pink  influ-card-tab-Entertainment-size">
                                         </div>
                                         <p>Entertainment Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-pink influ-card-tab-Technology-size">
                                         </div>
@@ -3433,7 +4259,7 @@
                                             Technology Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-green influ-card-tab-Education-size">
 
@@ -3442,7 +4268,7 @@
                                             Education Youtubers</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
                                     <div class="influ-card-tab-var-col">
                                         <div class="influ-card-tab-var-img bg-green  influ-card-tab-Automobile-size">
 
@@ -3477,7 +4303,7 @@
                 <div class="key-fact-boxicon-main">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <div class="key-fact-boxicon">
                                     <div class="fact-box">
                                         <h2>3500+</h2>
@@ -3487,7 +4313,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <div class="key-fact-boxicon">
 
                                     <div class="fact-boxs">
@@ -3498,7 +4324,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <div class="key-fact-boxicon">
 
                                     <div class="fact-box">
@@ -3508,7 +4334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <div class="key-fact-boxicon">
 
                                     <div class="fact-box">
@@ -3533,14 +4359,14 @@
             <div class="row">
                 <div class="blog-content-start">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <h2>Blog & Article</h2>
                             <img src="imgs/border.png" alt="">
                         </div>
                         <div class="col-4">
 
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="d-flex justify-content-end">
                                 <button>Learn More</button>
                             </div>
@@ -3549,7 +4375,7 @@
                 </div>
                 <div class="blog-main-start">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="blog-tabs">
                                 <img src="imgs/Blog-1-1024x683.jpg" alt="">
                                 <div class="d-flex">
@@ -3568,7 +4394,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="blog-tabs">
                                 <img src="imgs/Blog-2-1024x683.jpg" alt="">
                                 <div class="d-flex">
@@ -3587,7 +4413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="blog-tabs">
                                 <img src="imgs/Blog-3-1024x683.jpg" alt="">
                                 <div class="d-flex">
@@ -3622,14 +4448,14 @@
                         <div class="influ-contactus-form">
                             <h2>Grow Your With Influencer Marketing</h2>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="influ-contactus">
                                         <img src="imgs/selecting-the-right-influencers.webp" alt="">
                                         <h3>Hire Professional</h3>
 
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="influ-contact">
                                         <h3>Contact Us</h3>
                                         <input type="text" placeholder="Brand Name">
@@ -3660,7 +4486,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class=" col-sm-4">
+                    <div class=" col-sm-4 col-md-4 col-lg-4">
                         <p class="footer-heading">Influencer Marketing Services:</p>
                         <div class="links">
                             <ul class="footer-link">
@@ -3698,7 +4524,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
                         <p class="footer-heading">Get in Touch</p>
                         <p class="address-area"><strong>India Address:</strong></p>
                         <ul class="contact-details">
@@ -3728,7 +4554,7 @@
                                     href="tel:919149206120">+919149206120</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
                         <p class="footer-heading">Find us Online</p>
                         <ul class="footer-social-media">
                             <li><a href="https://facebook.com/grynow" target="_blank" rel="nofollow"
@@ -3763,10 +4589,10 @@
             <div class="lower-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
                             <p> © Grynow 2024 All Rights Reserved </p>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
                             <ul class="disclimer-links">
                                 <li> <a href=""> Terms &amp; Conditions </a> </li>
                                 <li> <a href=""> Privacy Policy </a> </li>
