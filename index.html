@@ -390,32 +390,28 @@
 
 
 
-        .banner-contactus-container {
-            padding: 12px 11px;
+        .banner-contactus-container button {
+            padding: 9px 20px;
+            background-color: var(--morpich);
+            margin-top: 26px;
+            border-radius: 20px 20px;
+            border: none;
             display: inline;
-            background-color: var(--white);
-            border-radius: 12px;
-            letter-spacing: 0.1px;
-            box-shadow: 0px 0px 5px 0px;
-
-        }
-
-        .banner-contactus-container a {
-            color: var(--morpich);
-            font-size: 19px;
-            text-decoration: none;
-            letter-spacing: 0.1px;
-            font-weight: 700;
-        }
-
-        .banner-contactus-container:hover {
-            background-color: var(--black);
-
-        }
-
-        .banner-contactus-container:hover a {
+            font-weight: 600;
             color: var(--white);
+            font-family: var(--Fredoka);
         }
+
+
+
+        .banner-contactus-container button:hover {
+            background-color: var(--black);
+            transform: scale(1.1);
+
+
+        }
+
+
 
         /* new-home-banner-end */
 
@@ -433,7 +429,7 @@
         }
 
         .swiper-photos-idea {
-            padding: 20px 80px;
+            padding: 55px 80px;
         }
 
 
@@ -451,9 +447,16 @@
         }
 
         .swiper-photos-idea img {
-            padding: 10px;
-            padding-bottom: 30px;
+            padding: 9px;
+            width: 10%;
+            margin: 4px;
+            height: 60px;
 
+        }
+
+        .swiper-photos-idea img:hover {
+
+            box-shadow: 0px 0px 5px 0px;
         }
 
 
@@ -505,6 +508,16 @@
 
         }
 
+        .key-fact-boxicon:hover {
+            transform: scale(1.1);
+            background-color: #05435ed2;
+            transition: 1s;
+
+        }
+
+        .key-fact-boxicon:hover .fact-box p {
+            color: white;
+        }
 
         .fact-box h2 {
             text-align: center;
@@ -514,6 +527,10 @@
             font-size: 55px;
             font-weight: 700;
             text-shadow: 2px 2px black;
+        }
+
+        .key-fact-boxicon:hover .fact-box h2 {
+            color: white;
         }
 
         .fact-box p {
@@ -534,6 +551,14 @@
             text-shadow: 2px 2px black;
             font-size: 55px;
             font-weight: 700;
+        }
+
+        .key-fact-boxicon:hover .fact-boxs h2 {
+            color: white;
+        }
+
+        .key-fact-boxicon:hover .fact-boxs p {
+            color: white;
         }
 
         .fact-boxs p {
@@ -707,9 +732,11 @@
             padding-bottom: 60px;
         }
 
+
         .influ-case-studies {
             width: 94%;
             margin-top: 115px;
+
         }
 
         .cs-text {
@@ -722,29 +749,17 @@
             font-size: 40px;
         }
 
-        .cs-btn {
-            color: var(--white);
+        .cs-btn button {
+            padding: 9px 20px;
             background-color: var(--morpich);
-            padding: 6px 16px;
-            border: 2px solid #fff0;
-            border-radius: 6px;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: 500;
-            margin-top: 27px;
-            margin-left: 286px;
-            cursor: pointer;
-            text-shadow: 1px 1px black;
-            font-family: var(--Fredoka);
-
-        }
-
-        .cs-btn:hover {
-            /* box-shadow: 0 0 10px var(--morpich); */
-            background-color: black;
+            margin-top: 26px;
+            border-radius: 20px 20px;
+            border: none;
+            font-weight: 600;
             color: var(--white);
 
         }
+
 
         .cs-text span {
             color: var(--morpich);
@@ -759,7 +774,12 @@
             height: 590px;
             background-color: var(--white);
             border-radius: 11px;
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 0.2);
+        }
+
+        .card-com-variation-one:hover {
+            background-color: var(--morpich);
+
         }
 
         .box {
@@ -785,6 +805,17 @@
             color: var(--morpich);
         }
 
+        .card-com-variation-one:hover .case-study-content p {
+            color: white;
+        }
+
+        .card-com-variation-one:hover .card-com-variation-button {
+            color: white;
+            transform: translate(10px);
+            transition: 0.6s;
+
+        }
+
         .card-com-variation-button {
             color: var(--BluishCyan);
             padding: 0px 15px;
@@ -793,10 +824,7 @@
             cursor: pointer;
         }
 
-        .card-com-variation-button:hover {
-            transform: translate(10px);
-            transition: 0.6s;
-        }
+
 
 
         /* influ-casestudies-end */
@@ -1235,7 +1263,7 @@
             right: 20px;
             color: var(--morpich);
             padding: 11px 22px;
-            border-radius: 6px;
+            border-radius: 20px 20px;
             font-size: 16px;
             font-weight: 800;
             margin-top: 15px;
@@ -1440,15 +1468,47 @@
             text-shadow: 2px 2px rgba(0, 0, 0, 0.965);
         }
 
+
+
+        @keyframes allfeatures {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+
+            }
+
+        }
+
+
+
+
         .feature-tab-wrapper {
             background-color: var(--white);
             border-radius: 10px;
-            margin-top: 40px;
+            margin-top: 23px;
             color: var(--white);
             height: 450px;
-            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.756);
             padding-bottom: 20px;
             padding-top: 20px;
+            position: relative;
+        }
+
+        .feature-tab-wrapper:hover {
+            animation: allfeaturescolor 1s reverse;
+            background-color: var(--BluishCyan);
+            transition: 1s;
+
+        }
+
+        .cs-btn button:hover {
+            transform: scale(1.1);
         }
 
         .feature-tab-wrapper button {
@@ -1471,8 +1531,6 @@
             margin: 0px 10px;
             height: 415px;
             border-radius: 20px 20px;
-
-
         }
 
         .feature-tab-wrapper-content h3 {
@@ -1481,7 +1539,10 @@
             display: inline;
             font-size: 27px;
             font-family: var(--Fredoka);
+        }
 
+        .feature-tab-wrapper-content:hover h3 {
+            color: white;
         }
 
         .feature-tab-wrapper-content p {
@@ -1501,6 +1562,12 @@
         .feature-img-contain img {
             width: 100%;
             height: 280px;
+            transition: 1s;
+        }
+
+
+        .feature-tab-wrapper:hover .feature-img-contain img {
+            animation: allfeatures 1s alternate;
 
         }
 
@@ -1828,13 +1895,12 @@
         }
 
         .influ-contact {
-            width: 90%;
+            width: 80%;
             height: 440px;
             background-color: var(--morpich);
             border-radius: 13px;
-            padding: 30px;
+            padding: 15px 30px;
             box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.756);
-
         }
 
         .influ-contact h3 {
@@ -1859,7 +1925,7 @@
 
         .influ-contact textarea {
             margin-top: 19px;
-            width: 86%;
+            width: 97%;
             border-radius: 7px;
             height: 90px;
             padding: 10px;
@@ -2128,10 +2194,9 @@
         .get-banner-influencers-container {
             background-color: var(--white);
             border-radius: 12px;
-            width: 45%;
-            padding: 12px 18px;
+            width: 60%;
+            padding: 12px 23px;
             font-family: var(--Fredoka);
-
         }
 
         .get-banner-influencers-container a {
@@ -2821,7 +2886,7 @@
                 right: 20px;
                 color: var(--morpich);
                 padding: 5px 8px;
-                border-radius: 6px;
+                border-radius: 20px 20px;
                 font-size: 13px;
                 font-weight: 700;
                 margin-top: 0px;
@@ -3404,7 +3469,12 @@
                                     influencers’ content in marketing and advertising their products/services. </p>
                             </div>
                             <div class="banner-contactus-container">
-                                <a href="">Contact Us</a>
+
+                                <div class="d-flex justify-content-start">
+                                    <button>Contact-Us</button>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -3488,13 +3558,10 @@
 
     <section>
         <div class="feature-background-variation ">
-
             <div class="container">
                 <div class="feature-tab-content">
                     <h2>Why Choose India's Top Influencer Marketing Agency?</h2>
                     <div class="row">
-
-
                         <div class="col-sm-4 col-md-4 col-lg-4">
                             <div class="feature-tab-wrapper">
                                 <div class="container">
@@ -3504,7 +3571,6 @@
                                             <img src="imgs/authentic.webp" alt="">
                                         </div>
                                         <button>Learn More</button>
-
                                     </div>
                                 </div>
                             </div>
@@ -3901,9 +3967,11 @@
 
                         <div class="full-width-faqs-main">
                             <div class="full-width-faqs-start">
-                                <a onclick="fullwidthfaq(this)">
-                                    <strong>+</strong> 1. Selecting the Right Influencers
-                                </a>
+                                <div onclick="fullwidthfaq(this)">
+                                    <a>
+                                        <strong>+</strong> 1. Selecting the Right Influencers
+                                    </a>
+                                </div>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
                                         <div class="col-sm-8 col-md-8 col-lg-8">
@@ -3939,9 +4007,12 @@
                             </div>
 
                             <div class="full-width-faqs-start">
-                                <a onclick="fullwidthfaq(this)">
-                                    <strong>+</strong> 2. Crafting Engaging Campaigns
-                                </a>
+                                <div onclick="fullwidthfaq(this)">
+
+                                    <a>
+                                        <strong>+</strong> 2. Crafting Engaging Campaigns
+                                    </a>
+                                </div>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
                                         <div class="col-sm-8 col-md-8 col-lg-8">
@@ -3968,13 +4039,12 @@
                             </div>
 
                             <div class="full-width-faqs-start">
-                                <a onclick="fullwidthfaq(this)">
-                                    <strong>+</strong>
-
-
-                                    3. Achieving Brand Success
-
-                                </a>
+                                <div onclick="fullwidthfaq(this)">
+                                    <a>
+                                        <strong>+</strong>
+                                        3. Achieving Brand Success
+                                    </a>
+                                </div>
                                 <div class="full-width-faqs-para">
                                     <div class="row">
                                         <div class="col-sm-8 col-md-8 col-lg-8">
@@ -4047,14 +4117,14 @@
                                     <div class="cs-text">
                                         <p>
                                             <span>Case Studies</span>
-
-
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4">
                                     <div class="cs-btn">
-                                        <h4>view all</h4>
+                                        <div class="d-flex justify-content-end">
+                                            <button>Learn More</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -4620,6 +4690,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
 
 </body>
 
